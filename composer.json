@@ -1,0 +1,38 @@
+{
+    "name": "baimo\/cms",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hey",
+            "email": "2223423872@qq.com"
+        }
+    ],
+    "require": {
+        "baimo/core": "dev-master",
+        "baimo/base": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baimo\\Cms\\": "src"
+        }
+    },
+    "baimo": {
+        "type": "path",
+        "url": "./packages/Baimo/"
+    },
+    "repositories": {
+        "baimo": {
+            "type": "path",
+            "url": "./packages/Baimo/"
+        }
+    },
+    "extra": {
+        "larvel": {
+            "providers": [
+                "Baimo\\Cms\\Providers\\ModulesServiceProvider"
+            ],
+            "dont-discover":[]
+        }
+    }
+}
